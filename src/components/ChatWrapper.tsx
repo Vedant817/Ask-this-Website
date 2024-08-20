@@ -8,7 +8,7 @@ const ChatWrapper = ({
     sessionId,
     initialMessages,
 }: {
-    sessionId: string;
+    sessionId: string | null;
     initialMessages: Message[];
 }) => {
     const { messages, handleInputChange, handleSubmit, input, setInput } = useChat({
